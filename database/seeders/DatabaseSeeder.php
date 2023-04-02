@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use App\Models\People;
+use App\Models\Product;
 use Illuminate\Database\Seeder;
 use Database\Factories\PeopleFactory;
 
@@ -23,5 +24,6 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         People::factory(50)->create();
+        Product::factory(20)->create();
     }
 }
